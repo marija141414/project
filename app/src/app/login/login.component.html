@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">&nbsp;</div>
+        <div class="row">&nbsp;</div>
+        <div class="row visina">
+            <div class="col-md-4">&nbsp;</div>
+            <div class="col-md-4 login">
+                <div class="row">&nbsp;</div>
+                <div class="row">&nbsp;</div>
+                <div class="row">&nbsp;</div>
+                <h2>LOGIN</h2>
+                <div class="row">
+                    <div class="col-md-2">&nbsp;</div>
+                    <div class="col-md-8">
+                        <br>
+                        <span>Username:</span>
+                        <br>
+                        <input type="text" class="rounded" placeholder="👤Type your username" [(ngModel)]="korisnickoIme">
+                        <br>
+                        <br>
+                        <span>Password:</span>
+                        <br>
+                        <input type="password" class="rounded" placeholder="🔒 Type your password" [(ngModel)]="lozinka">
+                        <br>
+                        <br>
+                        <input type="button" class="btn btn-success" value="LOGIN" (click)="prijaviSe()">
+                        <br>
+                        <span class="register">Not registered? <a routerLink="/register">Create an account</a> </span>
+                        <div class="row">&nbsp;</div>
+                        <div class="row">&nbsp;</div>
+                        <div class="row">&nbsp;</div>
+                    </div>
+                    <div class="col-md-2">&nbsp;</div>
+                </div>
+            </div>
+            <div class="col-md-4">&nbsp;</div>
+        </div>
+        <div class="row">&nbsp;</div>
+    </div>
+</body>
+</html>

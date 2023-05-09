@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row navbar">
+            <div class="col-md-9">
+                <table>
+                    <tr>
+                        <td><img src="../../assets/logo/logo.jpg" class="logo"></td>
+                        <td><a routerLink="/home"><span class="rutiranje">Home</span></a></td>
+                        <td><a routerLink="/events"><span class="rutiranje">Events</span></a></td>
+                        <td><a routerLink="/animals"><span class="rutiranje">Animals</span></a></td>
+                        <td><a routerLink="/contact"><span class="rutiranje">Contact</span></a></td>
+                    </tr>
+                </table>
+                
+            </div>
+            <div class="col-md-1">&nbsp;</div>
+            <div class="col-md-2">
+                <table>
+                    <tr>
+                        <td>👤</td>
+                        <td>{{korisnik.username}}</td>
+                        <td>🔔</td>
+                        <td>
+                            <input type="button" class="rounded" value="Logout" (click)="odjaviSe()">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br>
+        <div class="row pozadina">
+            <div class="row">
+                <div class="col-md-3">
+                    &nbsp;
+                </div>
+                <div class="col-md-2">
+                    <img src="./assets/animals/{{animal.image}}">
+                </div>
+                <div class="col-md-4">
+                    <h2 class="naslov">{{animal.commonName}}</h2>
+                    <span class="karakterisitike">COMMON NAME: {{animal.commonName}}</span>
+                    <span class="karakterisitike">SCIENTIFIC NAME: {{animal.scientificName}}</span>
+                    <span class="karakterisitike">TYPE: {{animal.type}}</span>
+                    <span class="karakterisitike">DIET: {{animal.diet}}</span>
+                    <span class="karakterisitike">AVERAGE LIFE SPAN IN THE WILD: {{animal.averageLife}}</span>
+                    <span class="karakterisitike">SIZE: {{animal.size}}</span>
+                    <span class="karakterisitike">WEIGHT: {{animal.weight}}</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row">
+                    <div class="col-md-1"> &nbsp; </div>
+                    <div class="col-md-3"> <span class="komentari">{{ comments | filter : 'animal' : commonName}} comments</span> </div>
+                    <div class="col-md-7"> &nbsp; </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1"> &nbsp; </div>
+                    <div class="col-md-5"> 👤 <input type="text" class="rounded" placeholder="Enter your comment" [(ngModel)]="textOfComment"> <button (click)="komentarisi(commonName)">➤</button> </div>
+                    <div class="col-md-5"> &nbsp; </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1">
+                        &nbsp;
+                    </div>
+                    <div class="col-md-8">
+                        <div class="row" *ngFor="let comment of commentss">
+                            <span class="komentari2"> 👤{{comment.text}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </div>
+    <div class="footer">
+        <div class="footer_contents"> <b> &#169; </b> Copyright - Zoo Pandica</div>
+    </div>
+</body>
+</html>

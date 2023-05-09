@@ -1,0 +1,15 @@
+img{
+    width: 150px;
+    height: 150px;
+    clip-path: circle();
+    display: block;
+}
+
+.imeZivotinje{
+    font-family: "IBM Plex Serif";
+    color: white;
+    margin-left: 15%;
+    font-weight: bold;
+    text-shadow: 2px 4px 4px rgba(121, 121, 123, 0.6);
+    font-size: 24px;
+}

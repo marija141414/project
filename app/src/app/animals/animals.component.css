@@ -1,0 +1,94 @@
+
+body{
+    background-color: #D4F4C9;
+}
+
+.navbar{
+    background-color: #71E549;
+}
+
+.logo{
+    width: 125px;
+    height: 90px;
+    margin-left: 0%;
+}
+
+a{
+    color: white;
+    float: right;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+a:link{
+    color: white;
+    font-weight: bold;
+    font-family: serif;
+    font-size: 28px;
+    text-decoration: none;
+}
+
+a:active{
+    color: #BBC0B2;
+    font-weight: bold;
+    font-family: serif;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #BBC0B2;
+    font-weight: bold;
+    font-family: serif;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #BBC0B2;
+}
+
+.pozadina{
+    background-color: #D4F4C9;
+}
+
+.rutiranje{
+    color: white;
+}
+
+.footer {
+    height:24px;
+    width: 100%;
+    background-image: none;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    position: fixed;
+    bottom: 0pt;
+    left: 0pt;
+    background:#638E4E;
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+}   
+
+.footer_contents {
+
+    height:30px; 
+    width: 1000px;
+    margin:auto;
+}
+
+.naslov3{
+    font-family: "IBM Plex Serif";
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 4px 4px rgba(121, 121, 123, 0.6);
+    margin-top: 3%;
+    padding-left: 35%;
+}
+
+.bottom {
+    position: fixed;     
+    text-align: center;    
+    bottom: 30px; 
+    width: 100%;
+}
